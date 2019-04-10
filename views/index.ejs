@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Search</title>
+    <link rel="stylesheet" type="text/css" href="../assets/search.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:700|Roboto" rel="stylesheet">
+  </head>
+  
+  <body>
+    <div class="container">
+      <h1> SEARCH </h1>
+      <fieldset>
+          <form action="/search" method="post">
+            <input name="keyword" type="text" class="ghost-input" placeholder="Search" required>
+             <input name="city" type="text" class="ghost-input" placeholder="City" required>
+            <input type="submit" class="ghost-button" value="Search">
+          </form>
+          <% if(keyword !== null){ %>
+              <ul>
+                <% for(var i = 0; i < options.length; i++){ %>
+                  <h3><%= options[i] %></h3>
+                <% } %>
+              </ul>
+          <% } %>
+
+          <% if(error !== null){ %>
+            <p><%= error %></p>
+          <% } %>
+      </fieldset>
+    </div>
+    
+  </body>
+</html>

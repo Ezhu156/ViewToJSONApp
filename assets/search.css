@@ -1,0 +1,74 @@
+body{
+	background-color: #FFA39C;
+}
+h1{
+	color: white;
+	text-align: center;
+	font-size: 1000%;
+	margin-bottom: 1%;
+	margin-top: 4%;
+	font-family: 'Roboto', sans-serif;
+
+}
+input[type=submit]{
+	background-color: #FFA39C;
+	color: white;
+	width: 25%;
+	text-decoration: none;
+	border: 2px solid white;
+	text-align: center;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	display: inline-block;
+}
+form{
+	text-align: center;
+}
+
+fieldset{
+	border: none;
+	margin: auto;
+	font-family: 'Nunito', sans-serif;
+}
+
+input[type=submit]:hover{
+	background-color: white;
+}
+
+input{
+	display: block;
+}
+
+input[type=text]{
+	background-color: #FFA39C;
+	border: 2px solid white;
+	width: 40%;
+	text-decoration: none;
+	text-align: center;
+	font-size: 110%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	margin: 1%;
+	outline: none;
+}
+
+input.ghost-input{
+	margin: auto;
+	display: block;
+	margin-bottom: 2%;
+}
+
+#error{
+	color: #802F2E;
+	font-size: 150%;
+	text-align: center;
+	margin: auto;
+	margin-top: 2%;
+}
+
+h3{
+	color: white;
+	text-align: center;
+	font-size: 200%;
+	margin-bottom: 1%;
+}

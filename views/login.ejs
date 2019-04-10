@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Log In</title>
+    <link rel="stylesheet" type="text/css" href="../assets/login.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:700|Roboto" rel="stylesheet">
+  </head>
+  
+  <body>
+    <div class="container">
+      <h1>LOG IN</h1>
+      <fieldset>
+        <form action="/login" method="post">
+          <input name="username" type="text" class="ghost-input" placeholder="Username">
+          <input name="password" type="text" class="ghost-input" placeholder="Password">
+          <input name= "button" type="submit" class="ghost-button" value="Submit">
+          <input name="button" type="submit" class="ghost-button" value="Create Account">
+
+        </form>
+        <% if(error !== null){ %>
+          <p id="error"><%= error %></p>
+        <% } %>
+      </fieldset>
+    </div>
+    
+  </body>
+</html>
